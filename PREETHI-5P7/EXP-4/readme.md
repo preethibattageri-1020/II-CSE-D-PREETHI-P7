@@ -5,7 +5,7 @@ CREATE TABLE dept (
     dname VARCHAR2(20)
 );
 ```
-![output](op1.png)
+![output](op01.png)
 
 # 2. Apply appropriate constraints on dept table.
 ```
@@ -14,7 +14,7 @@ ADD CONSTRAINT dept_pk PRIMARY KEY (dno);
 ALTER TABLE dept
 MODIFY dname VARCHAR2(20) NOT NULL;
 ```
-![output](op2.png)
+![output](op02.png)
 
 # 3. Create a student table having sid, sname, did as columns.
 ```
@@ -24,7 +24,7 @@ CREATE TABLE student (
     did NUMBER
 );
 ```
-![output](op3.png)
+![output](op03.png)
 
 # 4. Apply appropriate constraints on student table.
 ```
@@ -36,7 +36,7 @@ ALTER TABLE student
 ADD CONSTRAINT student_dept_fk
 FOREIGN KEY (did) REFERENCES dept(dno);
 ```
-![output](op4.png)
+![output](op04.png)
 
 # 5. Insert 7 records into dept table.
 ```
@@ -48,7 +48,7 @@ INSERT INTO dept VALUES (5, 'ECE');
 INSERT INTO dept VALUES (6, 'CSM');
 INSERT INTO dept VALUES (7, 'CSD');
 ```
-![ouput](op5.png)
+![ouput](op05.png)
 
 # 6. Insert at least 10 records into student table.
 ```
@@ -63,8 +63,8 @@ INSERT INTO student VALUES (108, 'Divya', 1);
 INSERT INTO student VALUES (109, 'Vijay', 2);
 INSERT INTO student VALUES (110, 'Meena', 3);
 ```
-![output](op6.png)
-![output](op6.png)
+![output](op06.png)
+![output](op06.png)
 
 # 7. Write a SQL Query to Implement NATURAL JOIN between Student and Dept.
 ```
@@ -72,21 +72,21 @@ SELECT * FROM student
 JOIN dept
 ON student.did = dept.dno;
 ```
-![output](op7.png)
+![output](op07.png)
 
 # 8. Write a SQL Query to Implement EQUI JOIN between Student and Dept.
 ```
 SELECT * FROM student, dept
 WHERE student.did = dept.dno;
 ```
-![output](op8.png)
+![output](op08.png)
 
 # 9. Write a SQL Query to Implement CONDITIONAL JOIN between Student and Dept.
 ```
 SELECT * FROM student, dept
 WHERE student.did > dept.dno;
 ```
-![output](op9.png)
+![output](op09.png)
 
 # 10. Write a SQL Query to Implement LEFT OUTER NATURAL JOIN between Student and Dept.
 ```
