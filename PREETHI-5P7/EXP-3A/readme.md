@@ -72,35 +72,35 @@ SELECT Employee_ID, First_Name,
 TO_CHAR(Salary, 'L99,999.00') AS Salary
 FROM Employee;
 ```
-![output](op4.png)
+![output](op04.png)
 
 # (3a) 3. Write an SQL query to add 5000 to each employee's salary using the TO_NUMBER function.
 ```
 SELECT TO_NUMBER(Salary) + 5000 AS New_Salary
 FROM Employee;
 ```
-![output](op5.png)
+![output](op05.png)
 
 # (3a) 4. Write an SQL query to display the details of employees who were hired after 01-JAN-2020 using the TO_DATE function.
 ```
 SELECT * FROM Employee
 WHERE Hire_Date > TO_DATE('01-JAN-2020', 'DD-MON-YYYY');
 ```
-![output](op6.png)
+![output](op06.png)
 
 # (3a) 5. Write an SQL query to display the full name of each employee by concatenating the first name and last name using the concatenation (||) operator.
 ```
 SELECT First_Name || ' ' || Last_Name AS Full_Name
 FROM Employee;
 ```
-![output](op7.png)
+![output](op07.png)
 
 # (3a) 6. Write an SQL query to concatenate the first name and last name of each employee using the CONCAT function.
 ```
 SELECT CONCAT(First_Name, CONCAT(' ', Last_Name)) AS Full_Name
 FROM Employee;
 ```
-![output](op8.png)
+![output](op08.png)
 
 
 # (3a) 7. Write an SQL query to display each employee's first name left-padded with * characters using the LPAD function.
@@ -108,7 +108,7 @@ FROM Employee;
 SELECT LPAD(First_Name, 10, '*') AS Padded_Name
 FROM Employee;
 ```
-![output](op9.png)
+![output](op09.png)
 
 # (3a) 8. Write an SQL query to display each employee's first name right-padded with * characters using the RPAD function.
 ```
