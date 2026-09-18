@@ -54,9 +54,9 @@ INSERT INTO employees VALUES
 TO_DATE('30-APR-2019', 'DD-MON-YYYY'), 'Jaipur');
 
 ```
-![output](op1.png)
-![output](op2.png)
-![output](op2.png)
+![output](op01.png)
+![output](op02.png)
+![output](op02.png)
 
 # (3a) 1. Write an SQL query to display the employee ID, first name, and hire date in the format DD-MON-YYYY using the TO_CHAR function.
 ```
