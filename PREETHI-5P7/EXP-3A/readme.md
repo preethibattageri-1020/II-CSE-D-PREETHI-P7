@@ -64,7 +64,7 @@ SELECT Employee_ID, First_Name,
 TO_CHAR(Hire_Date, 'DD-MON-YYYY') AS Hire_Date
 FROM Employee;
 ```
-![output](op3.png)
+![output](op03.png)
 
 # (3a) 2. Write an SQL query to display the employee ID, first name, and salary formatted with a currency symbol using the TO_CHAR function.
 ```
